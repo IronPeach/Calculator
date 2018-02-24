@@ -19,6 +19,7 @@
 				console.log("You can type the menu of the category for the function that falls in this category:")
 				console.log("Basic(): Show all function in Baisc.")
 				console.log("Area(): Show all function about area.")
+				console.log("Volume():Show all function of Volume")
 				console.log("")
 				console.log("Below me is the all function")
 //Basic function
@@ -47,6 +48,9 @@
 				console.log("RecPyrV(Length of Base, Width of Base, Height): fidn volume of your rectanglar pyramid.")
 				console.log("CylV(Radius,Height): find volume of your Cylinder.")
 				console.log("SphereV(Radius): find volime of your Sphere by use Radius")
+				console.log("Surface Area:")
+				console.log("CubeS(Side_Length): Find Surface area of Cube for you.")
+				console.log("RecPriS(Length,Width,Height): Find surface area of rectanglar prisim for you.")
 
 			}
 //Menu function
@@ -76,9 +80,32 @@
 		}
 		</script>
 		<script>
+	//Volume
+		function Volume(){
+			console.log("Volume:")
+			console.log("CubeV(Side): find the Volume of the cube for you.")
+			console.log("RecPriV(Length,Width,Height): find the Volume of your rectanglar prisim")
+			console.log("TriPriVLength(Of triangle), altitude, height): find volume of your triangler prisim.")
+			console.log("RecPyrV(Length of Base, Width of Base, Height): fidn volume of your rectanglar pyramid.")
+			console.log("CylV(Radius,Height): find volume of your Cylinder.")
+			console.log("SphereV(Radius): find volime of your Sphere by use Radius")
+
+		}
 //Calculating function:
 	//Geometry calculation function
+		//surface area
+			function CubeS(SL){
+				var a = SL*SL*6
+				console.log("It's "+a+"!")
+			}
+			function CubeS_Help(){
+				console.log("CubeS() can help you find the Surface Area of your cube just by input the side length, Ex:CubeS(5) give you 150.")
+			}
 
+			function RecPriS(L,W,H){
+				var a = ((L*W)+(L*H)+(W*H))*2
+				console.log("It's "+a+"!"))
+			}
 		</script>
 
 <!--And this part is....-->
