@@ -12,7 +12,7 @@
 //function of Help()
 			function Help(){
 				console.log("	Direction：")
-				console.log("Type in the function you need with () and split the numbers with \",\" Then run it by pressing enter. Type Help() for reading this whole helping guide. For example, the direction of Add() is \"Add(number1,number2)\" so you will type Add(2,3) in the console, and the console will have the output of 5. Also, when you get a problem with a function, just type the function name and _Help(), for example, if you don't understand about Add() function, you will do Add_Help() and there will be some example and how to use it. Now go to this utimate cauculator, if you find any bug, please e-mail it to Iron_Peach@protonmail.com.")
+				console.log("Type in the function you need with () and split the numbers with \",\" Then run it by pressing enter. Type Help() for reading this whole helping guide. For example, the direction of Add() is \"Add(number1,number2)\" so you will type Add(2,3) in the console, and the console will have the output of 5. Also, when you get a problem with a function, just type the function name and _Help(), for example, if you don't understand about Add() function, you will do Add_Help() and there will be some example and how to use it. Now go to this utimate cauculator, if you find any bug or have more cauculating function you want us to add, please e-mail it to Iron_Peach@protonmail.com.")
 				console.log("")
 				console.log("You can type the menu of the category for the function that falls in this category:")
 				console.log("Basic(): Show all function in Baisc.")
@@ -36,6 +36,7 @@
 				console.log("The Parallelogram use same formula as Rectangle, so use RecA() instead")
 				console.log("CircleA(Radius): use radius find the area of your circle, if you got diameter, just divide diameter by 2")
 				console.log("TrapezoidA(Base1,Base2,Height): Find the area of Trapezoid for you.")
+				console.log("SemiCirA(Radius): use redius find the area of your semi-circle, if you got diameter, just divide diameter by 2.")
 	//Volume function
 				console.log("Volume:")
 				console.log("Cube(Side): find the Volume of the cube for you.")
@@ -65,6 +66,9 @@
 			console.log("The Parallelogram use same formula as Rectangle, so use RecA() instead")
 			console.log("CircleA(Radius): use radius find the area of your circle, if you got diameter, just divide diameter by 2")
 			console.log("TrapezoidA(Base1,Base2,Height): Find the area of Trapezoid for you.")
+		}
+		function Area_Help(){
+			console.log("Show you all function we have for Area.")
 		}
 //Calculating function:
 	//Geometry calculation function
@@ -147,6 +151,12 @@
 						var A = (B1 + B2 * H)/2
 						console.log("it's " + A + "!")
 					}
+				}
+			//fuc of semicircle
+				function SemiCirA(r){
+					a = r*r*Math.PI/2
+					b = r*r/2
+					console.log("It's "+a+"(in decimal form) or it's "+b+"π!")
 				}
 		//function of Volume
 			//func of cube
