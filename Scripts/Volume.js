@@ -40,7 +40,7 @@
 				function CylV(R,H){
 					var a = R*R*Math.PI*H
 					var b = R*R*H
-					console.log)("It's "+a+"(in decimal form) or it's "+b+"π!")
+					console.log("It's "+a+"(in decimal form) or it's "+b+"π!")
 			//hfo cyl
 				function CylV_Help(){
 					console.log("CylV_Help() can help you get the volume of a Cylinder, just give it the radius and hight, like CylV(2,3)...")
